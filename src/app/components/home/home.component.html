@@ -1,0 +1,38 @@
+<section>
+    <div class="bg">
+        <div class="title">
+            <div class="heading">
+                <h1>
+                    BUILD RIPPED
+                    ATHLETIC MUSCLE
+                    IN JUST WEEKS!
+                </h1>
+                <p>
+                    If You Want To Look Like an athlete you shoud train like an athlete
+                </p>
+            </div>
+            <div class="adv">
+                <span>Used by:</span>
+                <div class="logo">
+                    <img *ngFor="let images of logoImages" [src]="images.imgPath" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="card" *ngFor="let card of cardContent">
+            <div class="head">
+                <h1>{{card.title}}</h1>
+            </div>
+            <div class="icon">
+                <i [class]="card.icon"></i>
+            </div>
+            <div class="description">
+                <p>
+                    {{card.info}}
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,116 @@
+section{
+    width: 100%;
+    .bg{
+        background-image: url(../../../assets/bg.jpg);
+        background-color: rgba(#222427, 0.7);
+        height: 550px;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title{
+            background-color: rgba(#2d9a85, 0.6);
+            padding: 20px;
+            width: 60%;
+            border-radius: 5px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            .heading{
+                width: 100%;
+                h1{
+                    font-size: 45px;
+                    color: #222427;
+                    width: 50%;
+                }
+                p{
+                    text-transform: uppercase;
+                    color: #04ab6b;
+                    margin-top: 20px;
+                }
+            }
+            .adv{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                span{
+                    color: #222427;
+                    font-size: 35px;
+                }
+                .logo{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 20px 30px;
+        background-color: rgba(lightgray,  1);
+
+        .card{
+            width: 250px;
+            text-align: center;
+            background-color: rgba(#222427,  1);
+            padding: 20px 15px;
+            border-radius: 5px;
+            border-bottom: 4px solid #fcab2b;
+            .head{
+                h1{
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    color: lightgray;
+                }
+            }
+
+            .icon{
+                i{
+                    font-size: 45px;
+                    margin: 20px 0;
+                }
+               
+            }
+            &:nth-child(2){
+                i{
+                    color: #2d9a85;
+                }
+            }
+
+            &:nth-child(3){
+                i{
+                    color: rgb(192, 0, 0);
+                }
+            }
+
+            &:nth-child(1){
+                i{
+                    color: #ffd900;
+                }
+            }
+
+            &:nth-child(4){
+                i{
+                    color: #04ab6b;
+                }
+            }
+
+            .description{
+                p{
+                    text-align: justify;
+                    color: gray;
+                }
+            }
+        }
+    }
+}

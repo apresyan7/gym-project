@@ -1,0 +1,49 @@
+<nav>
+    <!-- <ul>
+        <li class="filter-item active" appFilterDirective>All</li>
+        <li class="filter-item" appFilterDirective>Strength</li>
+        <li class="filter-item" appFilterDirective>Hypertrophy</li>
+        <li class="filter-item" appFilterDirective>Conditioning</li>
+        <li class="filter-item" appFilterDirective>Calisthenics</li>
+    </ul> -->
+    <!-- <ul>
+        <li class="filter-item">All</li>
+        <li class="filter-item">Strength</li>
+        <li class="filter-item">Hypertrophy</li>
+        <li class="filter-item">Conditioning</li>
+        <li class="filter-item">Calisthenics</li>
+    </ul> -->
+    <ul>
+        <li [ngClass]="{active: clicked == title.title}" (click)="ChangeClass(title)" class="filter-item" *ngFor="let title of programListTitle">{{title.title}}</li>
+        <!-- <li class="filter-item">Strength</li>
+        <li class="filter-item">Hypertrophy</li>
+        <li class="filter-item">Conditioning</li>
+        <li class="filter-item">Calisthenics</li> -->
+    </ul>
+</nav>
+
+<article>
+    <section [class]="item.class" *ngFor="let item of programContent">
+        <div [ngStyle]="{backgroundImage : 'url('+ item.imgPath +')'}" class="bg">
+            <div class="name">
+                <h1>
+                    {{item.name}}
+                </h1>
+            </div>
+        </div>
+        <div class="rate">
+            <div class="h2">
+                Rating :
+            </div>
+            <div class="icon">
+                <p>{{item.rate}}</p>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="more">
+            <h1>
+                Learn More
+            </h1>
+        </div>
+    </section>
+</article>
